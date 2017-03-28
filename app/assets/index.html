@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="include/app.css">
   </head>
   <body>
+
+    <div class="jscontent"></div>
+
     <h1>Thoughts</h1>
 
     <p>Note: double-click thoughts to delete them.</p>
@@ -14,12 +17,16 @@
       <input>
       <button>Add</button>
     </form>
-      
+
     <ul></ul>
+    <sample></sample>
     <script src="include/app.js"></script>
     <script src="include/vendor.js"></script>
     <script>
-      require('scripts/thoughts');
+      //require('scripts/thoughts');
+      var riot = require('riot');
     </script>
+     <script type="riot.tag" src="../tags/sample.tag"></script>
+    <script>riot.mount('sample')</script>
   </body>
 </html>

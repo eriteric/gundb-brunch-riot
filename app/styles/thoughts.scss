@@ -1,15 +1,22 @@
+$white: #FFF;
+$green: #349203;
+$black: #000;
+
+
 body {
-  background-color: black;
-  color: white;
+  background-color: $black;
+  color: $white;
 }
 
 h1 {
   font-size: 6rem;
   margin: 0;
+  color: $green;
 }
 
 ul li {
   font-size: 2rem;
+  color: $white;
 }
 
 form input,

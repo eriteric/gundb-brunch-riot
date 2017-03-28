@@ -2,6 +2,8 @@ var $ = require('jquery');
 var Gun = require('gun');
 var peers = ['http://localhost:8080/'];
 
+var riot = require('riot');
+
 var gun = Gun(peers).get('thoughts');
 
 $('form').on('submit', function(event){

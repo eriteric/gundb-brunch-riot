@@ -12,11 +12,24 @@ var gun = Gun({
   web: server
 });
 
-var thoughts = gun.get('thoughts');
+var riot = require('riot');
 
-thoughts.map().on(function(thought, id) {
-  console.log('thought:', thought, '(' + id + ')');
-});
+// var domvm = require("domvm");
+// var Navigo = require('navigo');
+// // navigo router init:
+// var root = null;
+// var useHash = true; // Defaults to: false
+// var hash = '#!'; // Defaults to: '#'
+// var router = new Navigo(root, useHash, hash);
+//
+
+
+
+// var thoughts = gun.get('thoughts');
+//
+// thoughts.map().on(function(thought, id) {
+//   console.log('thought:', thought, '(' + id + ')');
+// });
 
 app.use(Gun.serve);
 app.use(express.static(__dirname));
