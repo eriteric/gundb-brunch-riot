@@ -16,3 +16,9 @@ exports.config =
         stylesheet: 'include'
       removeOriginalFiles: false
       renameGzipFilesToOriginalFiles: false
+    on: ["riot"]
+    riot:
+      extension: 'tag'   # pattern overrides extension
+      pattern: /\.tag$/  # default
+      template: 'jade'
+      type: 'coffeescript'
